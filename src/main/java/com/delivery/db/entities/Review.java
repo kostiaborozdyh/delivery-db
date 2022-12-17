@@ -3,6 +3,7 @@ package com.delivery.db.entities;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -25,7 +26,7 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = User.class)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = User.class, cascade = {CascadeType.REMOVE})
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
@@ -33,5 +34,5 @@ public class Review {
     private String response;
 
     @Column(name = "date", nullable = false)
-    private LocalDateTime date;
+    private LocalDateTime date = LocalDateTime.now();
 }

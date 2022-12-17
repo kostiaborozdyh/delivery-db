@@ -33,8 +33,8 @@ CREATE TABLE `user` (
                         `email` varchar(45) NOT NULL,
                         `money` int DEFAULT NULL,
                         `role` varchar(45) NOT NULL,
-                        `notify` varchar(45) NOT NULL,
-                        `ban` varchar(45) NOT NULL,
+                        `notify` tinyint(1) NOT NULL,
+                        `ban` tinyint(1) NOT NULL,
                         PRIMARY KEY (`id`),
                         UNIQUE KEY `login_UNIQUE` (`login`),
                         UNIQUE KEY `email_UNIQUE` (`email`)
@@ -45,8 +45,9 @@ CREATE TABLE `review` (
                            `response` varchar(45) NOT NULL,
                            `date` date NOT NULL,
                            PRIMARY KEY (`id`),
+                           UNIQUE KEY `id_UNIQUE` (`id`),
                            KEY `user_id` (`user_id`),
-                           CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+                           CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE
 );
 CREATE TABLE `orders` (
                          `id` int NOT NULL AUTO_INCREMENT,
@@ -65,7 +66,7 @@ CREATE TABLE `orders` (
                          CONSTRAINT `order_ibfk_1` FOREIGN KEY (`description_id`) REFERENCES `description` (`id`),
                          CONSTRAINT `order_ibfk_2` FOREIGN KEY (`road_id`) REFERENCES `road` (`id`),
                          CONSTRAINT `order_ibfk_3` FOREIGN KEY (`dates_id`) REFERENCES `dates` (`id`),
-                         CONSTRAINT `order_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+                         CONSTRAINT `order_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE
 );
 
 
