@@ -1,4 +1,5 @@
 package com.delivery.db.entities;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
@@ -42,10 +43,10 @@ public class User {
     private String phoneNumber;
 
     @Column(name = "notify", nullable = false)
-    private String notify;
+    private Boolean notify;
 
     @Column(name = "ban", nullable = false)
-    private String ban;
+    private Boolean ban = false;
 
     @Column(name = "money")
     private Integer money;

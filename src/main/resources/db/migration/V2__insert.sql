@@ -30,23 +30,23 @@ INSERT INTO `road` VALUES
                        (8,'Черкаси, Україна','Донецьк, Україна','Адреса8'),
                        (9,'Черкаси, Україна','Варшава, Польща','Адреса9');
 INSERT INTO `user` VALUES
-                       (1,'user','$2a$10$5P1oORCyIjdbpd4wyoGB6uhMzDU4XmatqQVM5mWBypBr.7OGqw5DW','Костянтин','Бороздих','+380938988645','kostiaborozdyh@gmail.com',1738,'USER','yes','no'),
-                       (2,'user1','$2a$12$pqSsaAKJ.lGCQAKAR2a1fePbLaKvZg2sXdL.SBECGwif8K2oH30PC','Maks','Prokopenko','+380938988645','kostiaborozdyh1@gmail.com',700,'USER','no','no'),
-                       (4,'user3','$2a$12$pqSsaAKJ.lGCQAKAR2a1fePbLaKvZg2sXdL.SBECGwif8K2oH30PC','Oleh','Marin','+380938988645','kostiaborozdyh3@gmail.com',100,'USER','yes','no'),
-                       (5,'manager','$2a$12$cTsuUO.GrYZvB9/Ing0T8OGtF6mJ3TmTh83dPf5D9gP9JXxse7zZS','Менеджер','Менеджер','+380777777778','manager@gmail.com',2000,'MANAGER','no','no'),
-                       (21,'admin','$2a$12$/ZVyEKoEpm0ZSGwc5WiuguNzxLQ.BO/SVezlCNYSS2iIk4b5UoS5S','ADMIN','ADMIN','+380123456789','admin.delivery.holder@gmail.com',NULL,'ADMIN','no','no'),
-                       (31,'employee','$2a$12$hJI9rgBcKy7Fris.a/.7tuYlomztIW73bJfCB5gSYZHrx1YujSvZi','employee','employee','+380123212343','employee@gmail.com',NULL,'EMPLOYEE','no','no'),
-                       (32,'user12','$2a$12$/RE.mOh2EAqtut5T/QGR3OUPaaysD3HhT9od3nLz3sjlTon46.uOq','userPuser','userPuser','+380123232343','kostiabo@gmail.com',NULL,'USER','no','no'),
-                       (34,'user23','$2a$10$OCSxlE3V8x7sF4b9SDzP9ug2GwBc/kb5/vH6fdSphQ0tdvpqU3sU6','user','user','+380938988645','kostiabrozdyh@gmail.com',0,'USER','yes','no'),
-                       (35,'adminchik','$2a$10$btJTxt4OQITVS5X9cpVPeOS8JCZIFai64p/X/r/eqF65Yge6DXr1i','managerThree','managerThree','+380938988645','adm@gmail.com',0,'USER','no','no'),
-                       (36,'userTest','$2a$10$zGrAGGE.0FvaGoUS4EA2xO5uNI8RD5E2g5pxhdgseBlRumwbgAfty','Бороздих','Миколайович','+380938988645','koaborozdyh@gmail.com',0,'USER','no','no');
+                       (1,'user','$2a$10$5P1oORCyIjdbpd4wyoGB6uhMzDU4XmatqQVM5mWBypBr.7OGqw5DW','Костянтин','Бороздих','+380938988645','kostiaborozdyh@gmail.com',1738,'USER','1','0'),
+                       (2,'user1','$2a$12$pqSsaAKJ.lGCQAKAR2a1fePbLaKvZg2sXdL.SBECGwif8K2oH30PC','Maks','Prokopenko','+380938988645','kostiaborozdyh1@gmail.com',700,'USER','0','0'),
+                       (4,'user3','$2a$12$pqSsaAKJ.lGCQAKAR2a1fePbLaKvZg2sXdL.SBECGwif8K2oH30PC','Oleh','Marin','+380938988645','kostiaborozdyh3@gmail.com',100,'USER','1','0'),
+                       (5,'manager','$2a$12$cTsuUO.GrYZvB9/Ing0T8OGtF6mJ3TmTh83dPf5D9gP9JXxse7zZS','Менеджер','Менеджер','+380777777778','manager@gmail.com',2000,'MANAGER','0','0'),
+                       (21,'admin','$2a$12$/ZVyEKoEpm0ZSGwc5WiuguNzxLQ.BO/SVezlCNYSS2iIk4b5UoS5S','ADMIN','ADMIN','+380123456789','admin.delivery.holder@gmail.com',NULL,'ADMIN','0','0'),
+                       (31,'employee','$2a$12$hJI9rgBcKy7Fris.a/.7tuYlomztIW73bJfCB5gSYZHrx1YujSvZi','employee','employee','+380123212343','employee@gmail.com',NULL,'EMPLOYEE','0','0'),
+                       (32,'user12','$2a$12$/RE.mOh2EAqtut5T/QGR3OUPaaysD3HhT9od3nLz3sjlTon46.uOq','userPuser','userPuser','+380123232343','kostiabo@gmail.com',NULL,'USER','0','0'),
+                       (34,'user23','$2a$10$OCSxlE3V8x7sF4b9SDzP9ug2GwBc/kb5/vH6fdSphQ0tdvpqU3sU6','user','user','+380938988645','kostiabrozdyh@gmail.com',0,'USER','1','0'),
+                       (35,'adminchik','$2a$10$btJTxt4OQITVS5X9cpVPeOS8JCZIFai64p/X/r/eqF65Yge6DXr1i','managerThree','managerThree','+380938988645','adm@gmail.com',0,'USER','0','0'),
+                       (36,'userTest','$2a$10$zGrAGGE.0FvaGoUS4EA2xO5uNI8RD5E2g5pxhdgseBlRumwbgAfty','Бороздих','Миколайович','+380938988645','koaborozdyh@gmail.com',0,'USER','0','0');
 INSERT INTO `orders` VALUES
                         (1,1,1,1,1,'PAID','RECEIVED'),
                         (2,2,2,2,1,'PAID','RECEIVED'),
-                        (3,3,3,3,1,'PAID','RECEIVED'),
+                        (3,3,3,3,2,'PAID','RECEIVED'),
                         (4,4,4,4,1,'PAID','RECEIVED'),
                         (5,5,5,5,1,'PAID','RECEIVED'),
-                        (6,6,6,6,1,'PAID','IN_THE_POST_OFFICE'),
+                        (6,6,6,6,2,'PAID','IN_THE_POST_OFFICE'),
                         (7,7,7,7,1,'PAID','RECEIVED'),
                         (8,8,8,8,1,'PAID','IN_THE_POST_OFFICE'),
                         (9,9,9,9,1,'PAID','RECEIVED');

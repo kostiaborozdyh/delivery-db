@@ -38,7 +38,7 @@ public class Order {
     @JoinColumn(name = "dates_id", nullable = false)
     private Dates dates;
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = User.class)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = User.class, cascade = {CascadeType.REMOVE})
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
