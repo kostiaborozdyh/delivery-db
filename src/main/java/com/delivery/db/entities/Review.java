@@ -31,7 +31,7 @@ public class Review {
     private User user;
 
     @Column(name = "response", nullable = false)
-    private String response;
+    private String userResponse;
 
     @Column(name = "date", nullable = false)
     private LocalDateTime date = LocalDateTime.now();
